@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/infobot-pro/infobot-yc-logging-winston-transport.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Aleksey Kudakov <cto@infobot.pro>",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/infobot-pro/infobot-yc-logging-winston-transport/issues"
   },

@@ -1,7 +1,7 @@
 const Index = require('winston-transport');
 const {struct} = require('pb-util');
 const LoggerAPI = require("infobot-yc-logging");
-const {SPLAT} = require('triple-beam');
+const {MESSAGE} = require('triple-beam');
 
 module.exports = class CustomTransport extends Index {
     constructor(opts) {
@@ -22,8 +22,8 @@ module.exports = class CustomTransport extends Index {
 
         let meta = {};
 
-        if (info[SPLAT]) {
-            meta = info[SPLAT][0];
+        if (info[MESSAGE]) {
+            meta = JSON.parse(info[MESSAGE]);
         }
 
         let level = info.level.toUpperCase();
