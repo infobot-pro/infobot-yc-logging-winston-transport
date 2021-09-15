@@ -8,7 +8,7 @@ module.exports = class CustomTransport extends Index {
         super(opts);
 
         this.loggerGroupID = opts.ycLoggerGroupID;
-        this.YCLogger = new LoggerAPI(opts.ycLoggerKeyID, opts.ycLoggerKey, opts.ycLoggerGroupID, opts.ycLoggerPrivateKey);
+        this.YCLogger = new LoggerAPI(opts.ycLoggerServiceAccountID, opts.ycLoggerKeyID, opts.ycLoggerGroupID, opts.ycLoggerPrivateKey);
     }
 
     async log(info, callback) {
