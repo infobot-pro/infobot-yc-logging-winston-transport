@@ -1,6 +1,6 @@
 const Index = require('winston-transport');
 const {struct} = require('pb-util');
-const LoggerAPI = require("infobot-yc-logging");
+const LoggerAPI = require("infobot-yc-logging-api");
 const {MESSAGE} = require('triple-beam');
 
 module.exports = class CustomTransport extends Index {
