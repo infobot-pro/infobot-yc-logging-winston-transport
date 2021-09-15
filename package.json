@@ -28,6 +28,6 @@
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0",
     "pb-util": "^1.0.1",
-    "infobot-yc-logging": "^1.0.0"
+    "infobot-yc-logging-api": "^1.0.0"
   }
 }
