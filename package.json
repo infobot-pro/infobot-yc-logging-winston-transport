@@ -1,7 +1,7 @@
 {
   "name": "infobot-yc-logging-winston-transport",
   "version": "1.0.0",
-  "description": "",
+  "description": "YandexCloud Logging transport for Winston",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/infobot-pro/infobot-yc-logging-winston-transport.git"
   },
-  "author": "Aleksey Kudakov <cto@infobot.pro>",
+  "author": {
+    "name": "INFOBOT LLC"
+  },
+  "contributors": [
+    {
+      "name": "Aleksey Kudakov",
+      "email": "cto@infobot.pro"
+    }
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/infobot-pro/infobot-yc-logging-winston-transport/issues"
@@ -20,6 +28,6 @@
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0",
     "pb-util": "^1.0.1",
-    "infobot-yc-logging": "git+https://github.com/infobot-pro/infobot-yc-logging.git#master"
+    "infobot-yc-logging": "^1.0.0"
   }
 }
