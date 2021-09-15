@@ -26,6 +26,16 @@ module.exports = class CustomTransport extends Index {
             meta = info[SPLAT][0];
         }
 
+        let level = info.level.toUpperCase();
+
+        switch (info.level) {
+            case('verbose'):
+            case('http'):
+            case('silly'):
+                level = 'TRACE';
+                break;
+        }
+
         this._session.write({
             destination: {
                 log_group_id: this.loggerGroupID
@@ -36,7 +46,7 @@ module.exports = class CustomTransport extends Index {
             entries: [
                 {
                     timestamp: {seconds: Date.parse(info.timestamp) / 1000, nanos: 0},
-                    level: info.level.toUpperCase(),
+                    level: level,
                     message: info.message,
                     json_payload: struct.encode(meta)
                 }
