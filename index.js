@@ -7,6 +7,10 @@ module.exports = class CustomTransport extends Index {
     constructor(opts) {
         super(opts);
 
+        if (!opts || !opts.ycLoggerGroupID) {
+            throw new Error('ycLoggerGroupID is a mandatory option');
+        }
+
         this.loggerGroupID = opts.ycLoggerGroupID;
         this.YCLogger = new LoggerAPI(opts.ycLoggerServiceAccountID, opts.ycLoggerKeyID, opts.ycLoggerPrivateKey);
     }

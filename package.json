@@ -1,6 +1,6 @@
 {
   "name": "infobot-yc-logging-winston-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "YandexCloud Logging transport for Winston",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0",
     "pb-util": "^1.0.1",
-    "infobot-yc-logging-api": "^1.0.0"
+    "infobot-yc-logging-api": "^1.1.0"
   }
 }

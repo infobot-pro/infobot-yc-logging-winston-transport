@@ -35,7 +35,8 @@ const logger = winston.createLogger({
         new ycTransport({
             ycLoggerServiceAccountID: ID_СЕРВИСНОГО_АККАУНТА,
             ycLoggerKeyID: ID_КЛЮЧА_СЕРВИСНОГО_АККАУНТА,            
-            ycLoggerPrivateKey: fs.readFileSync('ПУТЬ_К_ПРИВАТНОМУ_КЛЮЧУ')
+            ycLoggerPrivateKey: fs.readFileSync('ПУТЬ_К_ПРИВАТНОМУ_КЛЮЧУ'),
+            ycLoggerGroupID: ID_ГРУППЫ_ЛОГИРОВАНИЯ
         })
     ]
 });
